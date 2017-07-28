@@ -19,7 +19,18 @@ class CardView: UIView {
         let nib = UINib(nibName: "CardView", bundle: nil)
         let view = nib.instantiate(withOwner: nil, options: nil)[0] as! CardView
         view.setViewContent(row: row)
+        view.sizeFitting()
         return view
+    }
+    
+    private func sizeFitting() {
+        // 重要：xibと実機のwidthが違うと、systemLayoutSizeFittingが正しく計測されないため事前にwidthを合わせる。
+        self.frame = CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: self.frame.height)
+        
+        self.setNeedsLayout()
+        self.layoutIfNeeded()
+        let size = self.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
+        self.frame = CGRect.init(x: 0, y: 0, width: size.width, height: size.height)
     }
     
     private func setViewContent(row: Int) {

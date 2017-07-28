@@ -12,10 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
         let scrollView = UIScrollView.init(frame: self.view.frame, subviews: [
-            UIView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: UIApplication.shared.statusBarFrame.height)),
+            UIView.statusBar(),
             CardView.instantiate(0),
             CardView.instantiate(1),
             CardView.instantiate(2)
@@ -25,6 +23,13 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+}
+
+extension UIView {
+    
+    public class func statusBar() -> UIView {
+        return UIView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIApplication.shared.statusBarFrame.height))
     }
 }
 
