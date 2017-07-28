@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardView" customModule="AutoSizingLabelSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="246"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BqF-hK-OjQ">
+                    <rect key="frame" x="30" y="15" width="360" height="216"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wk-FO-Ze0">
+                            <rect key="frame" x="8" y="8" width="344" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="EDZ-UT-cQT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zII-7a-K6R">
+                            <rect key="frame" x="8" y="51" width="344" height="125"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="82" id="vG3-JL-lBD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iP-6y-sJi">
+                            <rect key="frame" x="0.0" y="176" width="360" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="2np-wQ-sg5"/>
+                            </constraints>
+                            <state key="normal" title="More"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="3iP-6y-sJi" firstAttribute="leading" secondItem="BqF-hK-OjQ" secondAttribute="leading" id="A9W-WP-48u"/>
+                        <constraint firstItem="zII-7a-K6R" firstAttribute="leading" secondItem="BqF-hK-OjQ" secondAttribute="leading" constant="8" id="AWc-2M-YQu"/>
+                        <constraint firstItem="3iP-6y-sJi" firstAttribute="top" secondItem="zII-7a-K6R" secondAttribute="bottom" id="Fx5-mo-CFr"/>
+                        <constraint firstAttribute="trailing" secondItem="5Wk-FO-Ze0" secondAttribute="trailing" constant="8" id="HDo-6n-fYR"/>
+                        <constraint firstAttribute="trailing" secondItem="3iP-6y-sJi" secondAttribute="trailing" id="Tfu-qL-eV8"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="213" id="bRZ-pq-mxc"/>
+                        <constraint firstAttribute="trailing" secondItem="zII-7a-K6R" secondAttribute="trailing" constant="8" id="hx6-e2-SJG"/>
+                        <constraint firstAttribute="bottom" secondItem="3iP-6y-sJi" secondAttribute="bottom" id="nYG-z4-Uqk"/>
+                        <constraint firstItem="5Wk-FO-Ze0" firstAttribute="leading" secondItem="BqF-hK-OjQ" secondAttribute="leading" constant="8" id="o3W-7D-1Fi"/>
+                        <constraint firstItem="zII-7a-K6R" firstAttribute="top" secondItem="5Wk-FO-Ze0" secondAttribute="bottom" id="wVD-8d-d42"/>
+                        <constraint firstItem="5Wk-FO-Ze0" firstAttribute="top" secondItem="BqF-hK-OjQ" secondAttribute="top" constant="8" id="zxu-qb-d82"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BqF-hK-OjQ" secondAttribute="trailing" constant="30" id="ELu-yQ-N35"/>
+                <constraint firstItem="BqF-hK-OjQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="dmp-i3-PdB"/>
+                <constraint firstItem="BqF-hK-OjQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="gDh-27-8yB"/>
+                <constraint firstAttribute="bottom" secondItem="BqF-hK-OjQ" secondAttribute="bottom" constant="15" id="qsS-cr-2se"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cardView" destination="BqF-hK-OjQ" id="4Bm-5f-LHV"/>
+                <outlet property="contentLabel" destination="zII-7a-K6R" id="Qla-12-tbU"/>
+                <outlet property="moreButton" destination="3iP-6y-sJi" id="vFu-eU-ngp"/>
+                <outlet property="titleLabel" destination="5Wk-FO-Ze0" id="8Ld-Tt-9xv"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="-157"/>
+        </view>
+    </objects>
+</document>
