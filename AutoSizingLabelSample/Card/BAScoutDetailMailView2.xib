@@ -11,15 +11,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BAScoutDetailMailView" customModule="AutoSizingLabelSample" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BAScoutDetailMailView2" customModule="AutoSizingLabelSample" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="420" height="246"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Fs-Bi-7mf">
-                    <rect key="frame" x="0.0" y="0.0" width="420" height="172"/>
+                    <rect key="frame" x="0.0" y="0.0" width="420" height="180"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zII-7a-K6R">
-                            <rect key="frame" x="0.0" y="0.0" width="420" height="172"/>
+                            <rect key="frame" x="0.0" y="0.0" width="420" height="180"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -34,7 +34,7 @@
                     </constraints>
                 </view>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1Ku-Ty-yyR">
-                    <rect key="frame" x="0.0" y="172" width="420" height="45"/>
+                    <rect key="frame" x="0.0" y="180" width="420" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="QxU-SZ-Pnb"/>
                     </constraints>
@@ -53,7 +53,7 @@
                 <constraint firstItem="4Fs-Bi-7mf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9hT-4O-wAb"/>
                 <constraint firstItem="1Ku-Ty-yyR" firstAttribute="top" secondItem="4Fs-Bi-7mf" secondAttribute="bottom" id="EjM-ld-4FV"/>
                 <constraint firstAttribute="trailing" secondItem="1Ku-Ty-yyR" secondAttribute="trailing" id="Eke-0R-xTs"/>
-                <constraint firstAttribute="bottom" secondItem="1Ku-Ty-yyR" secondAttribute="bottom" constant="30" id="WjA-ZW-3z6"/>
+                <constraint firstAttribute="bottom" secondItem="1Ku-Ty-yyR" secondAttribute="bottom" constant="22" id="WjA-ZW-3z6"/>
                 <constraint firstItem="1Ku-Ty-yyR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wmg-Bf-kN6"/>
                 <constraint firstItem="4Fs-Bi-7mf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ybu-OP-0Ex"/>
             </constraints>

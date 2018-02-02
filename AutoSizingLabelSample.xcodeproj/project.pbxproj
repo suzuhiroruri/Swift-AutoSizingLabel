@@ -12,8 +12,8 @@
 		C7E164251F2ADDFD00ACF2B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E164231F2ADDFD00ACF2B9 /* Main.storyboard */; };
 		C7E164271F2ADDFD00ACF2B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E164261F2ADDFD00ACF2B9 /* Assets.xcassets */; };
 		C7E1642A1F2ADDFD00ACF2B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E164281F2ADDFD00ACF2B9 /* LaunchScreen.storyboard */; };
-		C7E164321F2ADE1F00ACF2B9 /* BAScoutDetailMailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E164311F2ADE1F00ACF2B9 /* BAScoutDetailMailView.xib */; };
-		C7E164361F2AE04A00ACF2B9 /* BAScoutDetailMailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E164351F2AE04A00ACF2B9 /* BAScoutDetailMailView.swift */; };
+		C7E164321F2ADE1F00ACF2B9 /* BAScoutDetailMailView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E164311F2ADE1F00ACF2B9 /* BAScoutDetailMailView2.xib */; };
+		C7E164361F2AE04A00ACF2B9 /* BAScoutDetailMailView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E164351F2AE04A00ACF2B9 /* BAScoutDetailMailView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		C7E164261F2ADDFD00ACF2B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7E164291F2ADDFD00ACF2B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7E1642B1F2ADDFD00ACF2B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7E164311F2ADE1F00ACF2B9 /* BAScoutDetailMailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAScoutDetailMailView.xib; sourceTree = "<group>"; };
-		C7E164351F2AE04A00ACF2B9 /* BAScoutDetailMailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAScoutDetailMailView.swift; sourceTree = "<group>"; };
+		C7E164311F2ADE1F00ACF2B9 /* BAScoutDetailMailView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAScoutDetailMailView2.xib; sourceTree = "<group>"; };
+		C7E164351F2AE04A00ACF2B9 /* BAScoutDetailMailView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BAScoutDetailMailView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,8 @@
 		291455F72024023E00B7D324 /* Card */ = {
 			isa = PBXGroup;
 			children = (
-				C7E164351F2AE04A00ACF2B9 /* BAScoutDetailMailView.swift */,
-				C7E164311F2ADE1F00ACF2B9 /* BAScoutDetailMailView.xib */,
+				C7E164351F2AE04A00ACF2B9 /* BAScoutDetailMailView2.swift */,
+				C7E164311F2ADE1F00ACF2B9 /* BAScoutDetailMailView2.xib */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -156,7 +156,7 @@
 			files = (
 				C7E1642A1F2ADDFD00ACF2B9 /* LaunchScreen.storyboard in Resources */,
 				C7E164271F2ADDFD00ACF2B9 /* Assets.xcassets in Resources */,
-				C7E164321F2ADE1F00ACF2B9 /* BAScoutDetailMailView.xib in Resources */,
+				C7E164321F2ADE1F00ACF2B9 /* BAScoutDetailMailView2.xib in Resources */,
 				C7E164251F2ADDFD00ACF2B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,7 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7E164221F2ADDFD00ACF2B9 /* ViewController.swift in Sources */,
-				C7E164361F2AE04A00ACF2B9 /* BAScoutDetailMailView.swift in Sources */,
+				C7E164361F2AE04A00ACF2B9 /* BAScoutDetailMailView2.swift in Sources */,
 				C7E164201F2ADDFD00ACF2B9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

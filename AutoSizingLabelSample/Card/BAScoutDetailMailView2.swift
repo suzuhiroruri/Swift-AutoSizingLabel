@@ -8,17 +8,16 @@
 
 import UIKit
 
-class BAScoutDetailMailView: UIView {
+class BAScoutDetailMailView2: UIView {
     var tabButtonPressedBlock: ((_ index: Int) -> Void)?
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     // 選択されているtabボタンのindex
     var currentIndex: Int = 0
-    
-    static func instantiate() -> BAScoutDetailMailView {
-        let nib = UINib(nibName: "BAScoutDetailMailView", bundle: nil)
-        guard let view = nib.instantiate(withOwner: nil, options: nil)[0] as? BAScoutDetailMailView else {
-            return BAScoutDetailMailView()
+    static func instantiate() -> BAScoutDetailMailView2 {
+        let nib = UINib(nibName: "BAScoutDetailMailView2", bundle: nil)
+        guard let view = nib.instantiate(withOwner: nil, options: nil)[0] as? BAScoutDetailMailView2 else {
+            return BAScoutDetailMailView2()
         }
         view.setViewContent()
         view.sizeFitting()

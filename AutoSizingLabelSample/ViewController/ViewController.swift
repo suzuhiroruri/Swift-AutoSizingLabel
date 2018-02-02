@@ -17,7 +17,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func setScrollView(){
-        let mailView:BAScoutDetailMailView = BAScoutDetailMailView.instantiate()
+        let mailView:BAScoutDetailMailView2 = BAScoutDetailMailView2.instantiate()
         scrollView = UIScrollView.init(frame: CGRect(x:0,y:0,width:self.view.frame.width,height:mailView.frame.height), subview:mailView)
         scrollView.alwaysBounceVertical = true
         scrollView.delegate = self
