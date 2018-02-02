@@ -9,23 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController, UIScrollViewDelegate {
-
+    var scrollView:UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let cardView = CardView.instantiate()
-        let scrollView = UIScrollView.init(frame: CGRect(x:0,y:0,width:self.view.frame.width,height:cardView.frame.height), subview:cardView)
+        self.setScrollView()
+    }
+    
+    func setScrollView(){
+        let mailView:BAScoutDetailMailView = BAScoutDetailMailView.instantiate()
+        scrollView = UIScrollView.init(frame: CGRect(x:0,y:0,width:self.view.frame.width,height:mailView.frame.height), subview:mailView)
         scrollView.alwaysBounceVertical = true
         scrollView.delegate = self
+        
         self.view.addSubview(scrollView)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 }
 
 extension UIScrollView {
     
+    // scrollViewのサイズを決定
     public convenience init(frame: CGRect, subview: UIView) {
         self.init(frame: frame)
         self.contentSize = CGSize.init(width: frame.width, height: subview.frame.height)
