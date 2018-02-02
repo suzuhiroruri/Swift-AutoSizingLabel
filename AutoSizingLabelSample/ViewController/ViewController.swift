@@ -12,13 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let scrollView = UIScrollView.init(frame: self.view.frame, subviews: [
-            UIView.statusBar(),
-            CardView.instantiate(0),
-            CardView.instantiate(1),
-            CardView.instantiate(2)
-            ])
-        self.view.addSubview(scrollView)
+        let cardView = CardView.instantiate()
+        self.view.addSubview(cardView)
     }
 
     override func didReceiveMemoryWarning() {

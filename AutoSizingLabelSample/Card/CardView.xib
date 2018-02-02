@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,24 +18,8 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BqF-hK-OjQ">
                     <rect key="frame" x="30" y="15" width="360" height="216"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wk-FO-Ze0">
-                            <rect key="frame" x="8" y="8" width="344" height="43"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="43" id="VLw-j2-s5h"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iP-6y-sJi">
-                            <rect key="frame" x="8" y="168" width="344" height="40"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="40" id="yGB-Zm-9q2"/>
-                            </constraints>
-                            <state key="normal" title="More"/>
-                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zII-7a-K6R">
-                            <rect key="frame" x="8" y="51" width="344" height="117"/>
+                            <rect key="frame" x="8" y="0.0" width="344" height="216"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -43,16 +27,10 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="5Wk-FO-Ze0" secondAttribute="trailing" constant="8" id="0sD-8H-FWc"/>
-                        <constraint firstItem="5Wk-FO-Ze0" firstAttribute="top" secondItem="BqF-hK-OjQ" secondAttribute="top" constant="8" id="5DP-AQ-wqk"/>
-                        <constraint firstAttribute="trailing" secondItem="3iP-6y-sJi" secondAttribute="trailing" constant="8" id="5cq-f8-Qg1"/>
-                        <constraint firstItem="zII-7a-K6R" firstAttribute="top" secondItem="5Wk-FO-Ze0" secondAttribute="bottom" id="KDd-HR-qSo"/>
-                        <constraint firstItem="5Wk-FO-Ze0" firstAttribute="leading" secondItem="BqF-hK-OjQ" secondAttribute="leading" constant="8" id="LTM-8y-xYh"/>
                         <constraint firstItem="zII-7a-K6R" firstAttribute="leading" secondItem="BqF-hK-OjQ" secondAttribute="leading" constant="8" id="RnL-jG-zOj"/>
-                        <constraint firstItem="3iP-6y-sJi" firstAttribute="leading" secondItem="BqF-hK-OjQ" secondAttribute="leading" constant="8" id="bOZ-JV-mJT"/>
-                        <constraint firstItem="3iP-6y-sJi" firstAttribute="top" secondItem="zII-7a-K6R" secondAttribute="bottom" id="dhS-lz-r4g"/>
+                        <constraint firstAttribute="bottom" secondItem="zII-7a-K6R" secondAttribute="bottom" id="hgS-Ej-PuO"/>
                         <constraint firstAttribute="trailing" secondItem="zII-7a-K6R" secondAttribute="trailing" constant="8" id="lAC-Hv-CYP"/>
-                        <constraint firstAttribute="bottom" secondItem="3iP-6y-sJi" secondAttribute="bottom" constant="8" id="zU2-27-hW6"/>
+                        <constraint firstItem="zII-7a-K6R" firstAttribute="top" secondItem="BqF-hK-OjQ" secondAttribute="top" id="pdo-Zx-7S6"/>
                     </constraints>
                 </view>
             </subviews>
@@ -68,8 +46,6 @@
             <connections>
                 <outlet property="cardView" destination="BqF-hK-OjQ" id="4Bm-5f-LHV"/>
                 <outlet property="contentLabel" destination="zII-7a-K6R" id="Qla-12-tbU"/>
-                <outlet property="moreButton" destination="3iP-6y-sJi" id="vFu-eU-ngp"/>
-                <outlet property="titleLabel" destination="5Wk-FO-Ze0" id="8Ld-Tt-9xv"/>
             </connections>
             <point key="canvasLocation" x="33" y="-157"/>
         </view>

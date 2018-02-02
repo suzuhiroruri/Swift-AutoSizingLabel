@@ -39,6 +39,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		291455F62024022900B7D324 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C7E164261F2ADDFD00ACF2B9 /* Assets.xcassets */,
+				C7E164281F2ADDFD00ACF2B9 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		291455F72024023E00B7D324 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				C7E164351F2AE04A00ACF2B9 /* CardView.swift */,
+				C7E164311F2ADE1F00ACF2B9 /* CardView.xib */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		299DDB472024043F0055EAC1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7E164211F2ADDFD00ACF2B9 /* ViewController.swift */,
+				C7E164231F2ADDFD00ACF2B9 /* Main.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		C7E164131F2ADDFC00ACF2B9 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +85,11 @@
 		C7E1641E1F2ADDFD00ACF2B9 /* AutoSizingLabelSample */ = {
 			isa = PBXGroup;
 			children = (
+				299DDB472024043F0055EAC1 /* ViewController */,
+				291455F72024023E00B7D324 /* Card */,
+				291455F62024022900B7D324 /* Resource */,
 				C7E1641F1F2ADDFD00ACF2B9 /* AppDelegate.swift */,
-				C7E164211F2ADDFD00ACF2B9 /* ViewController.swift */,
-				C7E164231F2ADDFD00ACF2B9 /* Main.storyboard */,
-				C7E164261F2ADDFD00ACF2B9 /* Assets.xcassets */,
-				C7E164281F2ADDFD00ACF2B9 /* LaunchScreen.storyboard */,
 				C7E1642B1F2ADDFD00ACF2B9 /* Info.plist */,
-				C7E164311F2ADE1F00ACF2B9 /* CardView.xib */,
-				C7E164351F2AE04A00ACF2B9 /* CardView.swift */,
 			);
 			path = AutoSizingLabelSample;
 			sourceTree = "<group>";
@@ -102,7 +126,7 @@
 				TargetAttributes = {
 					C7E1641B1F2ADDFD00ACF2B9 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7TNE6426T3;
+						DevelopmentTeam = 9JMCJCA8J2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -271,7 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7TNE6426T3;
+				DEVELOPMENT_TEAM = 9JMCJCA8J2;
 				INFOPLIST_FILE = AutoSizingLabelSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.product.AutoSizingLabelSample;
@@ -284,7 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7TNE6426T3;
+				DEVELOPMENT_TEAM = 9JMCJCA8J2;
 				INFOPLIST_FILE = AutoSizingLabelSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = self.product.AutoSizingLabelSample;
