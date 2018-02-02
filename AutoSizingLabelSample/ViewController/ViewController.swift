@@ -8,12 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let cardView = CardView.instantiate()
-        self.view.addSubview(cardView)
+        let scrollView = UIScrollView.init(frame: CGRect(x:0,y:0,width:self.view.frame.width,height:cardView.frame.height), subview:cardView)
+        scrollView.alwaysBounceVertical = true
+        scrollView.delegate = self
+        self.view.addSubview(scrollView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,23 +24,12 @@ class ViewController: UIViewController {
     }
 }
 
-extension UIView {
-    
-    public class func statusBar() -> UIView {
-        return UIView.init(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIApplication.shared.statusBarFrame.height))
-    }
-}
-
 extension UIScrollView {
     
-    public convenience init(frame: CGRect, subviews: [UIView]) {
+    public convenience init(frame: CGRect, subview: UIView) {
         self.init(frame: frame)
-        self.contentSize = CGSize.init(width: frame.width, height: subviews.map { $0.frame.height }.reduce(0, +))
-        var heightSummary: CGFloat = 0.0
-        for subview in subviews {
-            subview.frame = CGRect.init(x: 0.0, y: heightSummary, width: frame.width, height: subview.frame.height)
-            heightSummary += subview.frame.height
-            self.addSubview(subview)
-        }
+        self.contentSize = CGSize.init(width: frame.width, height: subview.frame.height)
+        subview.frame = CGRect.init(x: 0.0, y: 0.0, width: frame.width, height: subview.frame.height)
+        self.addSubview(subview)
     }
 }
